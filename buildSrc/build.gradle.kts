@@ -26,3 +26,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin")
     testImplementation("junit:junit:4.12")
 }
+
+tasks.withType<Test>().configureEach {
+    enabled = false
+}
